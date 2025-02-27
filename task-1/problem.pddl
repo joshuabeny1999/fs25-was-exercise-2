@@ -1,4 +1,5 @@
 (define (problem scheduling-problem)
+(:domain maintenance-scheduling)
   (:objects
     inhabitant1 inhabitant2 inhabitant3 inhabitant4 inhabitant5
     inhabitant6 inhabitant7 inhabitant8 inhabitant9 inhabitant10 - inhabitant
