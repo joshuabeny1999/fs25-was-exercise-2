@@ -23,7 +23,7 @@
   )
   
   (:action join
-    :parameters (?t - time ?r - room ?i - inhabitant)
+    :parameters (?t - time ?i - inhabitant ?r - room)
     :precondition (and 
                     (unlocked ?t ?r)
                     (roomFor ?i ?r))
@@ -31,7 +31,7 @@
   )
 
   (:action showRoom
-    :parameters (?t - time ?r - room ?i - inhabitant)
+    :parameters (?t - time ?i - inhabitant ?r - room)
     :precondition (and (joined ?t ?r)
                        (available ?i ?t)
                        (roomFor ?i ?r))
